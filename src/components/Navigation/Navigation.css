@@ -1,0 +1,14 @@
+.SignOut {
+font-size: 1.5em;
+font-weight:400;
+color: rgb(255, 255, 255);
+padding: 1em;
+margin: 0;
+transition: 1s;     
+}
+
+
+.SignOut:hover {
+    color: rgb(46, 46, 46);
+    text-decoration:underline 2px
+}
