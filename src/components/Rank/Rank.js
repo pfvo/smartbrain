@@ -1,6 +1,6 @@
 const Rank = () => {
     return (
-        <div style={{color: 'white', fontSize: '1.5em'}}>
+        <div style={{marginTop: '5vh',color: 'white', fontSize: '1.5em'}}>
             <div style={{padding: '1em'}}>
             {'StaticUser, your current Rank is:'}
             </div>

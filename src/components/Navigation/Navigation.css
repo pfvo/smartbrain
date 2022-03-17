@@ -1,9 +1,23 @@
+nav{
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    padding:0;
+    height: 50px;
+}
+
+.cjoin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .SignOut {
+
+margin-right: 1.5em;
 font-size: 1.5em;
 font-weight:400;
 color: rgb(255, 255, 255);
-padding: 1em;
-margin: 0;
 transition: 1s;     
 }
 

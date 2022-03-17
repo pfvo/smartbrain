@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import './ImageLinkForm.css';
 
-const ImageLinkForm = () => {
+const ImageLinkForm = ({inputChange, buttonSubmit}) => {
     return(
         <div>
             <p>
@@ -10,8 +10,8 @@ const ImageLinkForm = () => {
             <div className='center'>
                 <div className='inputBox center'>
                     <div className='container'>
-                        <input type='text' placeholder='Paste your link!'></input>
-                        <button>Detect!</button>
+                        <input onChange={inputChange} type='text' placeholder='Paste your link!'></input>
+                        <button onClick={buttonSubmit}>Detect!</button>
                     </div>
                 </div>
             </div>
