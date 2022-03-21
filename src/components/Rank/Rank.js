@@ -1,11 +1,11 @@
-const Rank = () => {
+const Rank = ({userName, userEntries}) => {
     return (
         <div style={{marginTop: '5vh',color: 'white', fontSize: '1.5em'}}>
             <div style={{padding: '1em'}}>
-            {'StaticUser, your current Rank is:'}
+            {`${userName}, your current Rank is:`}
             </div>
             <div>
-            {'#StaticNum'}
+            {`#${userEntries}`}
             </div>
         </div>
     )
