@@ -8,7 +8,6 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import './App.css';
-import { toHaveFocus } from '@testing-library/jest-dom/dist/matchers';
 
 
 const particleOptions={
@@ -111,7 +110,7 @@ displayFaceLocation = (box) => {
 
   onButtonSubmit = () => {
     this.setState({imgUrl: this.state.input})
-    fetch('http://localhost:3003/imageurl', {
+    fetch('https://arcane-wildwood-39956.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -121,7 +120,7 @@ displayFaceLocation = (box) => {
       .then(data => data.json())  
       .then(response => {
       if (response) {
-        fetch('http://localhost:3003/image', {
+        fetch('https://arcane-wildwood-39956.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
